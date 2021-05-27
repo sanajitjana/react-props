@@ -2,11 +2,13 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 
 //component
-import Cards from "./Card";
-import Navbar from "./Navbar";
+import Cards from "./Component/Card";
+import Navbar from "./Component/Navbar";
 
 //array
-import Blog_Data from "./Blogdata";
+import Blog_Data from "./Component/Api";
+
+//------ fat arrow fucntion -------
 
 // const nblog = (val) => {
 //   return (
