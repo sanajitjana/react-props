@@ -8,18 +8,18 @@ import Navbar from "./Navbar";
 //array
 import Blog_Data from "./Blogdata";
 
-// function nblog(val) {
+// const nblog = (val) => {
 //   return (
-//     <Col md={3}>
+//     <Col md={4}>
 //       <Cards
-//         imgsrc={Blog_Data[0].data_imgsrc}
-//         title={Blog_Data[0].data_title}
-//         description={Blog_Data[0].data_description}
-//         link={Blog_Data[0].data_link}
+//         imgsrc={val.data_imgsrc}
+//         title={val.data_title}
+//         description={val.data_description}
+//         link={val.data_link}
 //       />
 //     </Col>
 //   );
-// }
+// };
 
 console.log(Blog_Data[0]);
 function App() {
@@ -28,18 +28,19 @@ function App() {
       <Container>
         <Navbar />
         <Row>
-          {Blog_Data.map(function nblog(val) {
+          {Blog_Data.map((val) => {
             return (
               <Col md={4}>
                 <Cards
-                  imgsrc={Blog_Data[0].data_imgsrc}
-                  title={Blog_Data[0].data_title}
-                  description={Blog_Data[0].data_description}
-                  link={Blog_Data[0].data_link}
+                  imgsrc={val.data_imgsrc}
+                  title={val.data_title}
+                  description={val.data_description}
+                  link={val.data_link}
                 />
               </Col>
             );
           })}
+          {/* {Blog_Data.map(nblog)} */}
         </Row>
       </Container>
     </>
@@ -47,3 +48,11 @@ function App() {
 }
 
 export default App;
+
+//below default function-->
+// function myname(a, b) {
+//   a + b;
+// }
+
+//below fat arrow function-->
+// const myname = (a, b) => a + b;
