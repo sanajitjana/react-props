@@ -2,19 +2,18 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Card, Container } from "react-bootstrap";
 
-function Cards() {
+function Cards(props) {
   return (
     <React.Fragment>
       <Container className="mt-5">
         <Card>
-          <Card.Img variant="top" src="https://picsum.photos/200/150" />
+          <Card.Img variant="top" src={props.imgsrc} />
           <Card.Body>
-            <Card.Title>Blog Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Read Now</Button>
+            <Card.Title>{props.title}</Card.Title>
+            <Card.Text>{props.description}</Card.Text>
+            <a href={props.link} target="_new">
+              <Button variant="primary">Read Now</Button>
+            </a>
           </Card.Body>
         </Card>
       </Container>

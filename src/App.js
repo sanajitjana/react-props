@@ -10,7 +10,12 @@ function App() {
         <Navbar />
         <Row>
           <Col md={3}>
-            <Cards />
+            <Cards
+              imgsrc="https://picsum.photos/200/150"
+              title="Blog Title"
+              description="Some quick example text to build on the card title and make up the bulk of the card's content."
+              link="https://picsum.photos/200/150"
+            />
           </Col>
           <Col md={3}>
             <Cards />
