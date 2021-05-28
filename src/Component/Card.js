@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Card, Container } from "react-bootstrap";
 
-function Cards(props) {
+const Cards = (props) => {
   return (
     <React.Fragment>
       <Container className="mt-5 mb-5">
@@ -19,6 +19,6 @@ function Cards(props) {
       </Container>
     </React.Fragment>
   );
-}
+};
 
 export default Cards;
