@@ -8,8 +8,8 @@ import Navbar from "./Component/Navbar";
 function App() {
   return (
     <>
+      <Navbar />
       <Container>
-        <Navbar />
         <Row>
           <Col md={4}>
             <Cards
