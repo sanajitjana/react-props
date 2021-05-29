@@ -4,6 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 //component
 import Cards from "./Component/Card";
 import Navbar from "./Component/Navbar";
+import Footer from "./Component/Footer";
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </>
   );
 }
